@@ -3,6 +3,13 @@ let myLeads = [];
 const inputEl = document.getElementById('input-el');
 const inputBtn = document.getElementById('input-btn');
 const ulEl = document.getElementById('ul-el');
+const deleteBtn = document.getElementById('delete-btn');
+
+const leadsFromLocalStorage = JSON.parse(localStorage.getItem('myLeads'));
+if (leadsFromLocalStorage){
+    myLeads = leadsFromLocalStorage;
+    renderLeads();
+}
 
 inputBtn.addEventListener('click', () => {
     if (inputEl.value === ''){
@@ -11,8 +18,14 @@ inputBtn.addEventListener('click', () => {
 
     myLeads.push(inputEl.value);
     inputEl.value = '';
-    console.log(myLeads);
-    
+    localStorage.setItem('myLeads', JSON.stringify(myLeads));
+
+    renderLeads();
+});
+
+deleteBtn.addEventListener('dblclick', () => {
+    localStorage.clear();
+    myLeads = [];
     renderLeads();
 });
 
