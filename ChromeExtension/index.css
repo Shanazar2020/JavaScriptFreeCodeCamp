@@ -1,4 +1,4 @@
-body {
+/* body {
     margin: 0;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -39,3 +39,235 @@ li {
 li a {
     color: #5f9341
 }
+
+.copy-icon {
+    cursor: pointer; 
+    margin-left: 10px; 
+}
+
+.text-container {
+    display: inline-block;
+  } 
+  */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #001F29;
+    min-width: 400px;
+    border-radius: 5px;
+    max-width: 570px;
+    margin: auto;
+}
+
+/* body * {
+    border-radius: 5px;
+} */
+
+div {
+    margin-bottom: 5px;
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.input-container input {
+    background-color: #73787A;
+    padding: 5px;
+    margin: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    flex-grow: 1;
+    border: none; /* Remove default input border */
+    border-radius: 5px;
+    color: white;
+    outline: none; /* Remove default input outline */
+}
+
+.input-container input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Adjust placeholder color */
+}
+
+.input-container input:focus::placeholder {
+    color: transparent; /* Hide placeholder on focus */
+}
+
+#input-head {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+#input-el {
+    width: 60%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+button {
+    padding: 8px;
+    /* background-color: #4caf50; */
+    border-radius: 2px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#input-btn {
+    background-color: #45a049;
+    margin-right: 10px;
+}
+
+#delete-btn {
+    background-color: red;
+}
+
+
+button:hover {
+    background-color: #45a049;
+}
+
+#delete-btn:hover {
+    background-color: red;
+}
+
+ul {
+    list-style-type: none;
+    padding: 7px;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #99ADB5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0 10px;
+    flex-grow: 1;
+}
+
+.lead-head {
+    color: #2196F3;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.lead-value {
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+}
+
+.icon-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: none;
+    background-color: #99ADB5;
+}
+
+.icon {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* 
+li {
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: stretch;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-container {
+    align-items: center;
+    flex-grow: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    align-content: stretch;
+    display: flex;
+    justify-content: center;
+    margin: 0 10px; 
+}
+
+.lead-head {
+    color: #2196F3;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.lead-value {
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px; 
+}
+
+.icon-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px; 
+    height: 20px; 
+    padding: 0;
+    border: none;
+    background-color: #f0f0f0;
+}
+
+.icon {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+.copy-icom {
+    align-self: self-start;
+    flex-shrink: 0;
+}
+
+.delete-icon {
+    align-self: self-end;
+    flex-shrink: 0;
+} */
+
+
+/* .copy-icon:hover {
+    color: #45a049;
+} */

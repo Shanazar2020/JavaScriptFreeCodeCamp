@@ -3,9 +3,14 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <input type="text" id="input-el">
-        <button id="input-btn">SAVE INPUT</button>
-        <button id="delete-btn">DELETE ALL</button>
+        <div class="input-container">
+            <input type="text" id="input-head" class="input-field" placeholder="Heading">
+            <input type="text" id="input-el" class="input-field" placeholder="Value">
+        </div>
+        <div class="button-container">
+            <button id="input-btn">SAVE</button>
+            <button id="delete-btn">DELETE ALL</button>
+        </div>
         <ul id="ul-el"></ul>
         <script src="index.js"></script>
     </body>
