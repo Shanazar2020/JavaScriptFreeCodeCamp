@@ -141,7 +141,7 @@ button:hover {
 
 ul {
     list-style-type: none;
-    padding: 7px;
+    padding: 10px;
 }
 
 .list-item {
@@ -166,12 +166,14 @@ ul {
 }
 
 .lead-head {
-    color: #2196F3;
+    color: #004080; /* Darker blue color */
     font-weight: bold;
+    font-size: 18px; /* Adjust the size accordingly */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 
 .lead-value {
     color: black;
